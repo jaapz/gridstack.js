@@ -1104,6 +1104,10 @@
                 });
                 o.find('.grid-stack-item').trigger('resizestop');
             }
+
+            if (event.type === 'resizestop') {
+                o.trigger('resizedone');
+            }
         };
 
         el
